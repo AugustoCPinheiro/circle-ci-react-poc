@@ -47,13 +47,13 @@ jobs:
 
 
 workflows:
-  test: # This is the name of the workflow, feel free to change it to better match your workflow.
+  ci_and_deploy: # This is the name of the workflow, feel free to change it to better match your workflow.
     # Inside the workflow, you define the jobs you want to run.
     jobs:
       - build_and_test
-  deploy:
-    jobs:
       - checkout_and_deploy:
-         filters:
+          requires: [build_and_test]
+          filters:
             branches:
               only: master
+      
