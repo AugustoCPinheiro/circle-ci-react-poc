@@ -31,7 +31,7 @@ jobs:
       - run:
           name: Test
           command: npm run test-ci
-      - store_artifacts:
+      - store_test_results:
           path: coverage
       - save_cache:
           paths:
