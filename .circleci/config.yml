@@ -42,9 +42,9 @@ jobs:
       - image: node:lts
     resource_class: small
     steps:
+      - checkout
       - heroku/install
       - heroku/deploy-via-git
-
 
 workflows:
   ci_and_deploy: # This is the name of the workflow, feel free to change it to better match your workflow.
@@ -58,4 +58,3 @@ workflows:
           filters:
             branches:
               only: master
-      
