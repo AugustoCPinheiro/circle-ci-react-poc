@@ -32,7 +32,7 @@ jobs:
           name: Test
           command: npm run test-ci
       - store_artifacts:
-        path: coverage
+          path: coverage
       - save_cache:
           paths:
             - ./build
