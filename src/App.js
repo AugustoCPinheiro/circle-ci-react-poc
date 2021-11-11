@@ -23,7 +23,7 @@ function App() {
             execPost({ email: 'eve.holt@reqres.in', password: 'pistol' })
           }
         >
-          Learn React
+          Learn React{' '}
         </a>
       </header>
     </div>
