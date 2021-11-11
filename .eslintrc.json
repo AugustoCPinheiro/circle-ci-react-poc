@@ -7,7 +7,9 @@
     "extends": [
         "eslint:recommended",
         "plugin:react/recommended",
-        "plugin:prettier/recommended"
+        "plugin:prettier/recommended",
+        "plugin:jest/recommended",
+        "plugin:jest/style"
     ],
     "parser": "babel-eslint",
     "parserOptions": {
@@ -23,10 +25,10 @@
       "jest"
     ],
     "rules": {
-        "prettier/prettier": ["error", { "endOfLine": "auto" }],
+      "prettier/prettier": ["error", { "endOfLine": "auto" }],
       "arrow-body-style": "off",
       "prefer-arrow-callback": "off",
       "react/jsx-uses-react": "off",
-    "react/react-in-jsx-scope": "off"
+      "react/react-in-jsx-scope": "off"
     }
 }
